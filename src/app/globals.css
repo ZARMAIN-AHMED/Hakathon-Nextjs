@@ -64,3 +64,6 @@
     @apply bg-background text-foreground;
   }
 }
+.input-field {
+  @apply border border-gray-300 p-2 rounded-lg w-full;
+}  

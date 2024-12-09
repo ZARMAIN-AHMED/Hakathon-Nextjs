@@ -18,7 +18,7 @@
       }
     ],
     "paths": {
-      "@/*": ["Hakathon-Nextjs/src/*"]
+      "@/*": ["./Hakathon-Nextjs/src/*"]
     }
   },
   "include": ["Hakathon-Nextjs/next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
