@@ -24,10 +24,12 @@ const Testimonial = () => {
               key={index}
               className="bg-white shadow-lg rounded-lg overflow-hidden"
             >
-              <img
+              <Image
                 src={card.image}
                 className="w-full h-64 object-cover md:h-80 lg:h-96"
                 alt="Chef Card"
+                height={0}
+                width={0}
               />
             </div>
           ))}

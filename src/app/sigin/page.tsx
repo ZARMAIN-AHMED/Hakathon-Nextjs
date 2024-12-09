@@ -26,7 +26,7 @@ const SignIn = () => {
                   height={600}
                   width={400}
                 />
-                "
+                
               </div>
             </div>
 
