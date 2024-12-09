@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react';
-import Navbar from '../topnav/page';
-import Image from 'next/image';
+import React, { useState } from "react";
+import Navbar from "../topnav/page";
+import Image from "next/image";
 
 const Checkout = () => {
   const [billingAddressSame, setBillingAddressSame] = useState(false);
@@ -18,35 +18,67 @@ const Checkout = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
               <div>
                 <label className="block">First Name</label>
-                <input type="text" placeholder="First Name" className="input-field my-5 w-full" />
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  className="input-field my-5 w-full"
+                />
               </div>
               <div>
                 <label className="block">Last Name</label>
-                <input type="text" placeholder="Last Name" className="input-field my-5 w-full" />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  className="input-field my-5 w-full"
+                />
               </div>
               <div>
                 <label className="block">Email</label>
-                <input type="email" placeholder="Email" className="input-field my-5 w-full" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="input-field my-5 w-full"
+                />
               </div>
               <div>
                 <label className="block">Phone Number</label>
-                <input type="text" placeholder="Phone Number" className="input-field my-5 w-full" />
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  className="input-field my-5 w-full"
+                />
               </div>
               <div>
                 <label className="block">Company</label>
-                <input type="text" placeholder="Company" className="input-field my-5 w-full" />
+                <input
+                  type="text"
+                  placeholder="Company"
+                  className="input-field my-5 w-full"
+                />
               </div>
               <div>
                 <label className="block">City</label>
-                <input type="text" placeholder="City" className="input-field my-5 w-full" />
+                <input
+                  type="text"
+                  placeholder="City"
+                  className="input-field my-5 w-full"
+                />
               </div>
               <div>
                 <label className="block">Address 1</label>
-                <input type="text" placeholder="Address 1" className="input-field my-5 w-full" />
+                <input
+                  type="text"
+                  placeholder="Address 1"
+                  className="input-field my-5 w-full"
+                />
               </div>
               <div>
                 <label className="block">Zip Code</label>
-                <input type="text" placeholder="Zip Code" className="input-field my-5 w-full" />
+                <input
+                  type="text"
+                  placeholder="Zip Code"
+                  className="input-field my-5 w-full"
+                />
               </div>
               {/* Country Dropdown */}
               <div>
@@ -72,9 +104,11 @@ const Checkout = () => {
 
             <div className="flex justify-between mt-6 mb-8">
               <button className="flex items-center text-gray-600">
-                <span className="mr-2">{'<'}</span> Back to Cart
+                <span className="mr-2">{"<"}</span> Back to Cart
               </button>
-              <button className="bg-orange-500 text-white px-6 py-2 rounded-lg">Proceed to Shipping</button>
+              <button className="bg-orange-500 text-white px-6 py-2 rounded-lg">
+                Proceed to Shipping
+              </button>
             </div>
           </form>
         </div>
@@ -83,9 +117,27 @@ const Checkout = () => {
         <div className="w-full md:w-[424px] h-auto bg-gray-100 border-t border-gray-300 py-4 px-4 mt-6 md:mt-0">
           {/* Images */}
           <div className="mb-4 flex flex-col gap-2">
-            <Image src="/Chiken.png" alt="Chicken" className="object-cover" height={100} width={200} />
-            <Image src="/Chiken.png" alt="Chicken" className="object-cover" height={100} width={200} />
-            <Image src="/Chiken.png" alt="Chicken" className="object-cover" height={100} width={200} />
+            <Image
+              src="/Chiken.png"
+              alt="Chicken"
+              className="object-cover"
+              height={100}
+              width={200}
+            />
+            <Image
+              src="/Chiken.png"
+              alt="Chicken"
+              className="object-cover"
+              height={100}
+              width={200}
+            />
+            <Image
+              src="/Chiken.png"
+              alt="Chicken"
+              className="object-cover"
+              height={100}
+              width={200}
+            />
           </div>
 
           {/* Price Summary */}
@@ -112,7 +164,9 @@ const Checkout = () => {
             </div>
 
             {/* Place Order Button */}
-            <button className="bg-orange-500 text-white w-full py-2 rounded-lg">Place an Order</button>
+            <button className="bg-orange-500 text-white w-full py-2 rounded-lg">
+              Place an Order
+            </button>
           </div>
         </div>
       </div>

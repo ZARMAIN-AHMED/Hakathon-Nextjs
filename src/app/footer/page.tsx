@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="flex flex-col md:w-1/2 text-center md:text-left">
                 <h2 className="text-2xl md:text-4xl font-bold text-white mb-4"><span className='text-orange-500'>St</span>ill You Need Our Support ?</h2>
                 <p className="text-white text-sm md:text-base leading-relaxed">
-                Don’t wait make a smart & logical quote here. Its pretty easy.
+                Dont wait make a smart & logical quote here. Its pretty easy.
                 </p>
             </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
       <p className="mt-2 text-sm ">
       orporate clients and leisure travelers has
 been relying on Groundlink for dependab
-safe, and professional chauffeured car
+safe and professional chauffeured car
 service in major cities across World.
       </p>
       <br/><br/>
@@ -146,7 +146,7 @@ Sunday - Closed</h1></div>
           className="text-gray-600 ml-1"
           target="_blank"
         >
-          @knyttneve
+          ALL Copyright Reserved
         </a>
       </p>
       <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">

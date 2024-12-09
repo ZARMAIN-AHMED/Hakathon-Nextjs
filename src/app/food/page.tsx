@@ -26,9 +26,9 @@ export default function Food() {
               <br /> And Experienced
             </h1>
             <p className="mt-4 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum
-              non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id
-              elementum. Ultrices mattis vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque diam pellentesque bibendum
+              non dui volutpat fringilla bibendum. Urna elit augue urna vitae feugiat pretium donec id
+              elementum. Ultrices mattis vitae mus risus. Lacus nisi et ac dapibus sit eu velit in consequat.
             </p>
             <div className=" flex-col sm:flex-row justify-center md:justify-start mt-6 gap-4">
               <Image

@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import React from 'react';
-import { PiQuotes } from 'react-icons/pi';
-import Navbar from '../topnav/page';
+import Image from "next/image";
+import React from "react";
+import { PiQuotes } from "react-icons/pi";
+import Navbar from "../topnav/page";
 
 function About() {
   return (
@@ -26,20 +26,22 @@ function About() {
               part of a balanced Diet
             </h1>
             <p className="mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum
-              non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id
-              elementum. Ultrices mattis vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+              diam pellentesque bibendum non dui volutpat fringilla bibendum.
+              Urna elit augue urna vitae feugiat pretium donec id elementum.
+              Ultrices mattis vitae mus risus. Lacus nisi et ac dapibus sit eu
+              velit in consequat.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <button className="inline-flex text-white bg-yellow-500 border-0 py-3 px-7 focus:outline-none hover:bg-orange-600 rounded text-lg">
                 Show More
               </button>
-              <Image 
-                src={'/Video Button.png'}
-                alt='button'
+              <Image
+                src={"/Video Button.png"}
+                alt="button"
                 height={50}
                 width={150}
-                className='inline-flex'
+                className="inline-flex"
               />
             </div>
           </div>
@@ -52,7 +54,8 @@ function About() {
                 Why Choose Us
               </h1>
               <p className="mt-6 text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                diam pellentesque bibendum non dui volutpat fringilla bibendum.
               </p>
             </div>
 
@@ -70,7 +73,9 @@ function About() {
 
         <section className="bg-white dark:bg-gray-900">
           <div className="container px-6 py-10 mx-auto">
-            <span className="text-orange-500 block text-center md:text-left">Testimonials</span>
+            <span className="text-orange-500 block text-center md:text-left">
+              Testimonials
+            </span>
             <h1 className="text-2xl font-bold text-gray-800 capitalize lg:text-3xl dark:text-white text-center md:text-left">
               What our clients are saying
             </h1>
@@ -88,7 +93,11 @@ function About() {
                   stroke="currentColor"
                   strokeWidth="2"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
                 </svg>
               </button>
 
@@ -102,12 +111,14 @@ function About() {
                     width={100}
                   />
                   <div className="mt-2 text-orange-500">
-                    <PiQuotes className='w-10 h-10'/>
+                    <PiQuotes className="w-10 h-10" />
                   </div>
                 </div>
                 <p className="mt-6 text-gray-500 px-4 md:px-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui
-                  volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum.
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Quisque diam pellentesque bibendum non dui volutpat fringilla
+                  bibendum. Urna elit augue urna vitae feugiat pretium donec id
+                  elementum.
                 </p>
                 <div className="flex flex-col items-center mt-6">
                   <div className="flex">
@@ -117,7 +128,9 @@ function About() {
                     <span className="text-yellow-400">⭐</span>
                     <span className="text-gray-400">⭐</span>
                   </div>
-                  <h3 className="mt-2 text-lg font-semibold text-gray-800 dark:text-white">Mia Brown</h3>
+                  <h3 className="mt-2 text-lg font-semibold text-gray-800 dark:text-white">
+                    Mia Brown
+                  </h3>
                 </div>
               </div>
 
@@ -133,7 +146,11 @@ function About() {
                   stroke="currentColor"
                   strokeWidth="2"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </button>
             </div>

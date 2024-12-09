@@ -1,6 +1,6 @@
-import Image from "next/image";
 import React from "react";
 import Navbar from "../topnav/page";
+import Image from "next/image";
 
 const ShoppingCard = () => {
   const products = [
@@ -56,7 +56,6 @@ const ShoppingCard = () => {
           <span>Price</span>
           <span>Quantity</span>
           <span className="pr-32">Total</span>
-          
         </div>
         <div className="flex flex-col gap-4 mt-4">
           {products.map((product) => (
@@ -65,10 +64,12 @@ const ShoppingCard = () => {
               className="flex flex-col md:flex-row items-center justify-between bg-white shadow-md rounded-md overflow-hidden p-4 gap-4 md:gap-0"
             >
               <div className="flex items-center gap-4">
-                <img
+                <Image
                   src={product.image}
                   alt={product.name}
                   className="w-24 h-24 object-cover rounded-md"
+                  height={100}
+                  width={100}
                 />
                 <div className="flex flex-col">
                   <h3 className="text-lg font-semibold">{product.name}</h3>
@@ -81,9 +82,13 @@ const ShoppingCard = () => {
               </div>
 
               <div className="flex flex-col md:flex-row items-center justify-between flex-1 gap-4">
-                <p className="text-sm text-gray-600 lg:pl-56">{product.price}</p>
+                <p className="text-sm text-gray-600 lg:pl-56">
+                  {product.price}
+                </p>
                 <p className="text-sm text-gray-600">{product.quantity}</p>
-                <p className="text-sm text-gray-600 lg:pr-32">{product.total}</p>
+                <p className="text-sm text-gray-600 lg:pr-32">
+                  {product.total}
+                </p>
               </div>
 
               <button
