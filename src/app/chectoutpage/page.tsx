@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Navbar from "../topnav/page";
 import Image from "next/image";
+import Error404 from "../error/page";
 
 const Checkout = () => {
   const [billingAddressSame, setBillingAddressSame] = useState(false);
@@ -10,7 +11,7 @@ const Checkout = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col md:flex-row justify-center items-start gap-4 p-4 pb-10">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4 p-4 pb-10">
         {/* Checkout Form */}
         <div className="w-full md:w-[872px] h-auto bg-white shadow-lg rounded-lg p-6 opacity-100">
           <h2 className="text-2xl font-bold mb-4">Checkout</h2>
@@ -102,14 +103,16 @@ const Checkout = () => {
               </div>
             </div>
 
-            <div className="flex justify-between mt-6 mb-8">
-              <button className="flex items-center text-gray-600">
-                <span className="mr-2">{"<"}</span> Back to Cart
-              </button>
-              <button className="bg-orange-500 text-white px-6 py-2 rounded-lg">
-                Proceed to Shipping
-              </button>
-            </div>
+            <div className="flex flex-col md:flex-row justify-between mt-6 mb-8 gap-4">
+  <button className="flex items-center text-gray-600 w-full md:w-auto">
+    <span className="mr-2">{"<"}</span> Back to Cart
+  </button>
+  <button className="bg-orange-500 text-white px-6 py-2 w-full md:w-96 rounded-lg">
+    Proceed to Shipping
+    <span className="mr-2 pl-6">{">"}</span>
+  </button>
+</div>
+
           </form>
         </div>
 
@@ -122,54 +125,56 @@ const Checkout = () => {
               alt="Chicken"
               className="object-cover"
               height={100}
-              width={200}
+              width={500}
             />
             <Image
               src="/Chiken.png"
               alt="Chicken"
               className="object-cover"
               height={100}
-              width={200}
+              width={500}
             />
             <Image
               src="/Chiken.png"
               alt="Chicken"
               className="object-cover"
               height={100}
-              width={200}
+              width={500}
             />
           </div>
 
           {/* Price Summary */}
           <div className="border-t pt-4">
-            <div className="flex justify-between mb-2">
+            <div className="flex justify-between my-4">
               <span>Sub-total</span>
               <span>$130</span>
             </div>
-            <div className="flex justify-between mb-2">
+            <div className="flex justify-between my-4">
               <span>Shipping</span>
               <span>Free</span>
             </div>
-            <div className="flex justify-between mb-2">
+            <div className="flex justify-between my-4">
               <span>Discount</span>
               <span>25%</span>
             </div>
-            <div className="flex justify-between mb-2">
+            <div className="flex justify-between my-4">
               <span>Tax</span>
               <span>$54.76</span>
             </div>
-            <div className="flex justify-between mb-4 font-bold">
+            <div className="flex justify-between my-4 font-bold">
               <span>Total</span>
               <span>$432.65</span>
             </div>
 
-            {/* Place Order Button */}
-            <button className="bg-orange-500 text-white w-full py-2 rounded-lg">
-              Place an Order
-            </button>
+          {/* Place Order Button */}
+<button className="bg-orange-500 text-white w-full sm:w-2/3 md:w-3/4 lg:w-1/2 xl:w-1/3 py-2 rounded-lg">
+  Place an Order
+</button>
+
           </div>
         </div>
       </div>
+      <Error404 />
     </div>
   );
 };

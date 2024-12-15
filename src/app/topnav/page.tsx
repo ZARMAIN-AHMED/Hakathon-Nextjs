@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between px-6 py-3 mx-auto">
         {/* Logo */}
         <h2 className="text-white text-3xl title-font">
-          <span className="text-orange-500">Food</span>tuck
+          Food<span className="text-orange-500">tuck</span>
         </h2>
 
         {/* Navbar Links */}
@@ -30,7 +30,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/ourchef"
+            href="/menu"
             className="transition-colors duration-300 transform rounded-lg hover:text-orange-500"
           >
             Menu
@@ -128,7 +128,7 @@ const Navbar = () => {
         <Link href="/homepage" className="block py-2 hover:text-orange-500">
           Home
         </Link>
-        <Link href="/ourchef" className="block py-2 hover:text-orange-500">
+        <Link href="/menu" className="block py-2 hover:text-orange-500">
           Menu
         </Link>
         <Link href="blog" className="block py-2 hover:text-orange-500">

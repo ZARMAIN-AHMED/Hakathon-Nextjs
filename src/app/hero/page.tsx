@@ -1,4 +1,7 @@
+'use client'
+
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -21,9 +24,10 @@ function Hero() {
               Varius sed pharetra dictum neque massa congue
             </p>
             <div className="flex justify-center md:justify-start">
+              <Link href={'/menu'}>
               <button className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-2xl text-lg">
                 See Menu
-              </button>
+              </button></Link>
             </div>
           </div>
           <div className="flex justify-center md:w-1/2">

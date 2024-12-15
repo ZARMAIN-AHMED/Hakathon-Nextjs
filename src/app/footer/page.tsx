@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -67,7 +69,7 @@ export default function Footer() {
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium tracking-widest text-sm mb-3">Help</h2>
               <nav className="list-none mb-10">
-                <li><Link href="#" className="hover:text-gray-800">FAQ</Link></li>
+                <li><Link href="/question" className="hover:text-gray-800">FAQ</Link></li>
                 <li><Link href="#" className="hover:text-gray-800">Terms & Conditions</Link></li>
                 <li><Link href="#" className="hover:text-gray-800">Reporting</Link></li>
                 <li><Link href="#" className="hover:text-gray-800">Documentation</Link></li>

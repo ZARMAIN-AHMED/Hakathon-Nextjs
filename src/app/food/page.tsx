@@ -1,8 +1,66 @@
+'use client'
+
 import Image from 'next/image';
 import React from 'react';
 
 export default function Food() {
+    const cards = [
+      { image: "/p1.png" },
+      { image: "/p2.png" },
+      { image: "/p3.png" },
+      { image: "/p4.png" },
+    ];
+
   return (
+
+    
+        
+          <div className="bg-black">
+            <h1 className="text-4xl md:text-6xl font-bold pb-10 text-center text-white">
+              <span className="text-orange-500">Ch</span>oose Food Items
+            </h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+              {cards.map((card, index) => (
+                <div
+                  key={index}
+                  className="bg-white shadow-lg rounded-lg overflow-hidden"
+                >
+                  <Image
+                    src={card.image}
+                    className="w-full h-full object-cover md:h-full lg:h-full"
+                    alt="Chef Card"
+                    height={900}
+                    width={400}
+                  />
+     
+                  
+                </div>
+              ))}
+         
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div className="bg-black">
       {/* Main Section */}
       <section className="text-white bg-black body-font">
@@ -20,7 +78,7 @@ export default function Food() {
           </div>
           {/* Right Section: Text Content */}
           <div className="md:w-1/2 w-full text-center md:text-left md:pr-12">
-            <span className="text-yellow-500">About us__</span>
+            <span className="text-yellow-500">Experience</span>
             <h1 className="text-3xl md:text-4xl font-bold text-white mt-4">
               <span className="text-orange-500">Ex</span>traordinary Taste
               <br /> And Experienced
@@ -58,7 +116,7 @@ export default function Food() {
       </section>
 
      
-    
+    </div>
     </div>
   );
 }

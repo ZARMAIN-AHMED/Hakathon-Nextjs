@@ -4,6 +4,7 @@ import Image from "next/image";
 import Navbar from "../topnav/page";
 
 
+
 const CardGrid = () => {
   const cards = [
     {
@@ -82,7 +83,8 @@ const CardGrid = () => {
 
   return (
     <div>
-      <Navbar />{" "}
+      <Navbar />
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-6 ">
         {cards.map((card, index) => (
           <div
@@ -90,7 +92,7 @@ const CardGrid = () => {
             className=" bg-white text-black my-20 shadow-lg rounded-lg "
             style={{ width: "312px", height: "379.17px" }}
           >
-            <Image height={100} width={100} src={card.image} className="w-full h-full object-cover " alt={"description"} />
+            <Image height={100} width={400} src={card.image} className="w-full h-full object-cover " alt={"description"} />
             <div className=" bottom-4 left-1/2 transform  text-center">
               <h6 className="font-bold text-xl text-black pt-4 ">
                 {card.name}

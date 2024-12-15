@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import React from "react";
 import Navbar from "../topnav/page";
@@ -8,10 +10,10 @@ const Signup = () => {
     <div>
       <Navbar />
       <section className="bg-white dark:bg-gray-900 min-h-screen flex items-center">
-        <div className="container flex items-center justify-center mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center">
           <div className="flex flex-wrap w-full max-w-4xl">
             {/* Left Side: Additional Content */}
-            <div className="w-full md:w-1/2 flex items-center justify-center bg-orange-100 dark:bg-gray-800 p-6 rounded-l-lg">
+            <div className="w-full md:w-1/2 flex items-center justify-center bg-orange-100 dark:bg-gray-800 p-6 rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
               <div className="text-center">
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-white">
                   Welcome to Our Website!
@@ -20,7 +22,7 @@ const Signup = () => {
                   Enter your credentials to access your account.
                 </p>
                 <Image
-                  className="w-3/4 mx-auto mt-6 object-center rounded"
+                  className="w-full max-w-sm mx-auto mt-6 object-center rounded"
                   alt="hero"
                   src="/Image.png"
                   height={600}
@@ -30,7 +32,7 @@ const Signup = () => {
             </div>
 
             {/* Right Side: Form */}
-            <div className="w-full md:w-1/2 p-6 shadow-lg shadow-orange-200">
+            <div className="w-full md:w-1/2 p-6 shadow-lg shadow-orange-200 bg-white dark:bg-gray-900 rounded-b-lg md:rounded-r-lg md:rounded-bl-none">
               <form className="w-full max-w-md mx-auto">
                 <h1 className="mt-3 text-2xl font-semibold text-gray-800 capitalize sm:text-3xl dark:text-white text-center">
                   Sign Up
@@ -131,37 +133,42 @@ const Signup = () => {
                       Sign up
                     </button>
                   </Link>
-                  <Link href="#"  className="text-sm text-orange-500 hover:underline dark:text-orange-400 pl-72 py-5">
-                      Forget Password
-                    
+                  <Link
+                    href="#"
+                    className="text-sm text-orange-500 hover:underline dark:text-orange-400 block text-center"
+                  >
+                    Forget Password
                   </Link>
                   <p className="mt-4 text-center text-gray-600 dark:text-gray-400">
                     OR
                   </p>
 
-                  <Link href="#" className="flex items-center justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-                      <Image
-                        className="object-center rounded"
-                        alt="Google sign-in"
-                        src="/Icon-Google.png"
-                        height={10}
-                        width={20}
-                      />
-                      <span className="mx-2">Sign up with Google</span>
-                  
+                  <Link
+                    href="#"
+                    className="flex items-center justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
+                  >
+                    <Image
+                      className="object-center rounded"
+                      alt="Google sign-in"
+                      src="/Icon-Google.png"
+                      height={10}
+                      width={20}
+                    />
+                    <span className="mx-2">Sign up with Google</span>
                   </Link>
 
-                  <Link href="#" 
-                     className="flex items-center justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-                      <Image
-                        className="object-center rounded"
-                        alt="Apple sign-in"
-                        src="/Apple.png"
-                        height={10}
-                        width={20}
-                      />
-                      <span className="mx-2">Sign up with Apple</span>
-                   
+                  <Link
+                    href="#"
+                    className="flex items-center justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
+                  >
+                    <Image
+                      className="object-center rounded"
+                      alt="Apple sign-in"
+                      src="/Apple.png"
+                      height={10}
+                      width={20}
+                    />
+                    <span className="mx-2">Sign up with Apple</span>
                   </Link>
 
                   <div className="mt-6 text-center"></div>
@@ -176,3 +183,4 @@ const Signup = () => {
 };
 
 export default Signup;
+
